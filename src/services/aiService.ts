@@ -1,4 +1,3 @@
-
 import axios from 'axios';
 import Constants from 'expo-constants';
 import { GenerateItineraryApiInput, GenerateItineraryApiOutput } from '../types/itinerary'; // Adjust path
@@ -10,12 +9,19 @@ if (!genkitApiUrl) {
   console.warn('Genkit API URL is not configured. Please set EXPO_PUBLIC_GENKIT_API_URL in your .env file.');
 }
 
+const genkitApiKey = Constants.expoConfig?.extra?.genkitApiKey ?? process.env.EXPO_PUBLIC_GENKIT_API_KEY;
+
+if (!genkitApiKey) {
+  console.warn('Genkit API key is not configured. Please set EXPO_PUBLIC_GENKIT_API_KEY in your .env file.');
+}
+
 // Create an Axios instance for API calls
 const apiClient = axios.create({
   baseURL: genkitApiUrl,
   timeout: 30000, // 30 seconds timeout for AI generation
   headers: {
     'Content-Type': 'application/json',
+    'Authorization': `Bearer ${genkitApiKey}`,
   },
 });
 

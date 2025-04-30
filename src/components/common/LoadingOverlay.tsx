@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { View, ActivityIndicator, StyleSheet, Modal, Text } from 'react-native';
 import Colors from '../../constants/Colors'; // Adjust path as needed
@@ -22,7 +21,7 @@ const LoadingOverlay: React.FC<LoadingOverlayProps> = ({ visible, message = "Loa
     >
       <View style={styles.overlay}>
         <View style={styles.container}>
-          <ActivityIndicator size="large" color={Colors.primary} />
+          <ActivityIndicator size="small" color={Colors.primary} />
           {message && <Text style={styles.message}>{message}</Text>}
         </View>
       </View>

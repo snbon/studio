@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useEffect, useState, ReactNode } from "react";
 import { ActivityIndicator, View, Text, StyleSheet } from "react-native";
 import { onAuthStateChanged, User } from "firebase/auth";
@@ -36,7 +35,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   if (loading) {
     return (
       <View style={styles.loadingContainer}>
-        <ActivityIndicator size="large" color={Colors.primary} />
+        <ActivityIndicator size="small" color={Colors.primary} />
         <Text style={styles.loadingText}>Loading WanderWise...</Text>
       </View>
     );

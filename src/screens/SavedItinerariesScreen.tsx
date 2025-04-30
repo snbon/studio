@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState, useCallback } from 'react';
 import { View, Text, StyleSheet, FlatList, ActivityIndicator, RefreshControl } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -115,7 +114,7 @@ const SavedItinerariesScreen: React.FC<SavedItinerariesScreenProps> = ({ navigat
   if (isLoading && !isRefreshing) {
     return (
       <View style={styles.centered}>
-        <ActivityIndicator size="large" color={Colors.primary} />
+        <ActivityIndicator size="small" color={Colors.primary} />
          <Text style={styles.loadingText}>Loading Your Trips...</Text>
       </View>
     );

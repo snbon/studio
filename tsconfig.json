@@ -4,18 +4,19 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     },
-    "jsx": "react-native", // Ensure JSX is set for React Native
-    "esModuleInterop": true, // Recommended for compatibility
-    "skipLibCheck": true // Can speed up type checking
+    "jsx": "react-native",
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts" // Add this if you create a global env declaration file
-, "src/types/env.d.ts"  ],
+    "src/types/env.d.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

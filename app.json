@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "WanderWise",
+    "name": "wanderwise",
     "slug": "wanderwise",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "src/app/favicon.ico",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "src/app/favicon.ico",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,7 +17,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "src/app/favicon.ico",
         "backgroundColor": "#ffffff"
       },
       "package": "com.yourcompany.wanderwise"
@@ -26,10 +26,15 @@
       "favicon": "./assets/favicon.png"
     },
     "extra": {
-      "eas": {
-        "projectId": "YOUR_EAS_PROJECT_ID"
-      }
+      "firebaseApiKey": "AIzaSyDLjoLZIOFV05zM6Y25u-5SLyscl_OnGys",
+      "firebaseAuthDomain": "wanderwise-bnig8.firebaseapp.com",
+      "firebaseProjectId": "wanderwise-bnig8",
+      "firebaseStorageBucket": "wanderwise-bnig8.appspot.com",
+      "firebaseMessagingSenderId": "349138376274",
+      "firebaseAppId": "1:349138376274:web:c3ed25f8924171dd2d718b",
+      "firebaseMeasurementId": "YOUR_MEASUREMENT_ID"
     },
+    "newArchEnabled": true,
     "plugins": [
       [
         "expo-build-properties",

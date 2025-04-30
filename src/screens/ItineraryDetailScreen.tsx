@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, ActivityIndicator, Share, Alert, Platform } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -140,7 +139,7 @@ const ItineraryDetailScreen: React.FC<ItineraryDetailScreenProps> = ({ route, na
   if (isLoading) {
     return (
       <View style={styles.centered}>
-        <ActivityIndicator size="large" color={Colors.primary} />
+        <ActivityIndicator size="small" color={Colors.primary} />
         <Text style={styles.loadingText}>Loading Itinerary...</Text>
       </View>
     );
