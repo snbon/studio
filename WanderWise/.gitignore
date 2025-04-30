@@ -1,0 +1,58 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+build/
+dist/
+
+# Expo
+.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# Android
+android/app/build/
+android/app/.cxx/
+android/build/
+android/.gradle/
+android/app/src/debug/res/
+*debug*.apk
+*release*.apk
+android/app/.settings
+android/.idea/caches
+android/.idea/libraries
+android/.idea/modules.xml
+android/.idea/workspace.xml
+android/.idea/navEditor.xml
+android/.idea/assetWizardSettings.xml
+
+# iOS
+ios/Pods/
+ios/build/
+*.xcodeproj/project.xcworkspace
+*.xcodeproj/xcuserdata/
+DerivedData/
+Pods/
+*.ipa
+*libarclite_iphonesimulator.a
+*libarclite_iphoneos.a
+
+# Misc
+.env
+.env.*
+*.env
+*.log
+coverage/
+*.DS_Store
+# Firebase Emulators
+firebase-debug.log
+database-debug.log
+firestore-debug.log
+pubsub-debug.log
+storage-debug.log
+ui-debug.log

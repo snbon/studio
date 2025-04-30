@@ -1,0 +1,17 @@
+{
+  "node": {
+    "40512b82fdda89ddad7b96cf343b519b2c209ea76a": {
+      "workers": {
+        "app/itinerary/new/page": {
+          "moduleId": "[project]/.next-internal/server/app/itinerary/new/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/ai/flows/generate-itinerary.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/itinerary/new/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "MtL56Mk+ID21dUMrK5q+2AZTLQGVC5YytBtxrB6ov+c="
+}

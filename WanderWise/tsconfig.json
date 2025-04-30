@@ -1,0 +1,22 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "jsx": "react-native", // Ensure JSX is set for React Native
+    "esModuleInterop": true, // Recommended for compatibility
+    "skipLibCheck": true // Can speed up type checking
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts" // Add this if you create a global env declaration file
+, "src/types/env.d.ts"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
